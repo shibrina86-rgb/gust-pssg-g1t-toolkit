@@ -63,6 +63,18 @@ Switch 원본 PSSG에 같은 리소스 이름이 있는가?
 
 A14 도움말에서 실제로 발생한 실패와 해결 과정은 [사례 기록](docs/a14-help-case-study.md)에 정리했습니다.
 
+## G1N 기반 Switch 폰트 작업
+
+PC 패치의 G1N/변환 글꼴에서 글리프 슬롯을 복원하고 Switch OTF/TTF에 안전하게 반영하는 과정은 [G1N → Switch 폰트 작업 기록](docs/g1n-to-switch-font-workflow.md)에 정리했습니다.
+
+관련 도구:
+
+- `tools/g1n_inspect.py`: G1N 헤더·섹션·charmap 통계 확인
+- `tools/font_inventory.py`: OTF/TTF 구조와 한글/CJK 범위 확인
+- `tools/recover_outline_mapping.py`: 패치 전후 글꼴과 한글 donor 윤곽선을 비교해 슬롯 매핑 복원
+- `tools/build_truetype_slot_font.py`: Switch TrueType 기반 폰트에 글리프를 추가하고 기존 슬롯을 연결
+- `tools/alias_font_slots.py`: 이미 한글 글리프가 있는 OTF/TTF에 CJK 슬롯 별칭 추가
+
 ## 제한 사항
 
 - `g1t_bc1.py`는 현재 고정 헤더 형식의 단일 BC1 텍스처를 대상으로 합니다.
@@ -78,5 +90,6 @@ A14 도움말에서 실제로 발생한 실패와 해결 과정은 [사례 기�
 - 편집 후 해상도와 압축 데이터 길이 불변 확인
 - PSSG에 없던 객체를 임의 추가하지 않기
 - 실제 로딩 경로를 먼저 확인하고, 성공한 최소 변경을 기준본으로 유지
+- 네 개의 UI 폰트를 모두 검사하고 동일한 슬롯 매핑 적용 여부 확인
 
 
