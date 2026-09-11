@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+build/
+*.PSSG
+*.pssg
+*.g1t
+*.dds
+*.png
+
+
