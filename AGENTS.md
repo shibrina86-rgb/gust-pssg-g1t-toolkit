@@ -15,3 +15,5 @@ Before changing or packing any PSSG/G1T file:
 
 Do not commit copyrighted game assets, translated texture images, fonts, executables, keys, or user logs to this repository.
 
+For G1N or Switch OTF/TTF font work, also read `docs/g1n-to-switch-font-workflow.md` completely. Treat G1N as a bitmap/mapping source, preserve each Switch font as the structural base, distinguish TrueType `glyf` from CFF outlines, apply the recovered legacy-slot mapping to every font actually used by the game, and validate both Unicode Hangul and glyph-slot rendering.
+
