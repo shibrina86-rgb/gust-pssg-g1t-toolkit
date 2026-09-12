@@ -1,5 +1,13 @@
 # Gust PSSG/G1T Toolkit
 
+## Ayesha 실행 파일 문자열 한글 패치
+
+- [NSO main 분해·대응표·한글 인코딩·참조 패치·검증 방법](docs/ayesha-main-localization.md)
+- [내부 엔진 문자열 후보와 일본판 공통 영어 제외 기준](docs/ayesha-internal-strings.md)
+- [다음 작업을 위한 인계 기록](docs/ayesha-next-session.md)
+
+실행 확인된 6,563개 기준본의 재현 기록입니다. 실행 파일과 전체 번역 데이터는 포함하지 않습니다.
+
 거스트 계열 게임의 PSSG 내부 G1T 이식과 Switch용 개별 G1T 재구축을 안전하게 반복하기 위한 작은 도구와 실전 기록입니다.
 
 이 저장소에는 게임 원본, 번역 이미지, 폰트, 실행 파일이 없습니다. 사용자가 합법적으로 보유한 파일을 직접 준비해야 합니다.

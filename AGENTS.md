@@ -2,6 +2,8 @@
 
 These instructions apply to the entire repository.
 
+For Ayesha Switch NSO/main string localization, first read `docs/ayesha-main-localization.md`, `docs/ayesha-internal-strings.md`, and `docs/ayesha-next-session.md`. Preserve the last user-tested 6563 build. Treat offsets, classification counts, and table strides as build-specific observations. Exclude English shared with the Japanese build from additional translation per the recorded user preference; shared English is not proof of internal-only usage. Patch only evidenced display references and report static checks separately from game tests. Do not force a batch size by translating internal identifiers. These documents are the persistent project handoff for later sessions.
+
 Before changing or packing any PSSG/G1T file:
 
 1. Read `README.md` and `docs/a14-help-case-study.md` completely.
